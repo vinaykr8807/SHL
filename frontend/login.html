@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Login | SHL Recommender</title>
+    <link rel="stylesheet" href="/static/styles.css?v=7" />
+  </head>
+  <body>
+    <header class="topbar">
+      <a class="brand" href="/">
+        <span class="brand-mark">S</span>
+        <span>SHL Recommender</span>
+      </a>
+      <nav class="nav-actions">
+        <a class="nav-link" href="/">Home</a>
+        <a class="button-link" href="/chatbot">Chatbot</a>
+      </nav>
+    </header>
+
+    <main class="auth-page">
+      <section class="auth-card">
+        <div>
+          <p class="eyebrow">Secure workspace</p>
+          <h1>Welcome back.</h1>
+          <p class="subtle">
+            Sign in or create an account to keep your SHL conversations, JSON evidence, and rolling memory summary together.
+          </p>
+        </div>
+
+        <form id="authForm" class="auth-form">
+          <label>
+            Username
+            <input id="username" autocomplete="username" required minlength="3" />
+          </label>
+          <label>
+            Password
+            <input id="password" type="password" autocomplete="current-password" required minlength="4" />
+          </label>
+          <div class="auth-actions">
+            <button type="submit">Log in</button>
+            <button type="button" id="registerButton" class="secondary-button">Create account</button>
+          </div>
+          <p id="authStatus" class="status"></p>
+        </form>
+      </section>
+    </main>
+
+    <script src="/static/auth.js?v=7"></script>
+  </body>
+</html>

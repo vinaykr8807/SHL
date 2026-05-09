@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Chatbot | SHL Recommender</title>
+    <link rel="stylesheet" href="/static/styles.css?v=8" />
+  </head>
+  <body class="chat-body">
+    <header class="topbar compact">
+      <a class="brand" href="/">
+        <span class="brand-mark">S</span>
+        <span>SHL Recommender</span>
+      </a>
+      <nav class="nav-actions">
+        <span class="user-pill" id="userPill">Guest</span>
+        <button class="secondary-button small" id="logoutButton" type="button">Logout</button>
+      </nav>
+    </header>
+
+    <main class="chat-layout">
+      <aside class="sidebar-panel">
+        <p class="eyebrow">Assistant scope</p>
+        <h2>Assessment selector</h2>
+        <p class="subtle">
+          Ask for SHL assessment recommendations, refinements, or comparisons. Off-catalog and legal advice will be refused.
+        </p>
+        <div class="prompt-list">
+          <button type="button" data-prompt="Hiring a senior Java developer with Spring, SQL, AWS, and Docker.">
+            Java backend role
+          </button>
+          <button type="button" data-prompt="We are screening entry-level contact center agents for English US inbound calls.">
+            Contact center screen
+          </button>
+          <button type="button" data-prompt="Hiring graduate financial analysts. Need numerical reasoning and finance knowledge.">
+            Graduate finance
+          </button>
+        </div>
+      </aside>
+
+      <section class="chat-panel">
+        <div class="chat-header">
+          <div>
+            <p class="eyebrow">Catalog-grounded conversation</p>
+            <h1>SHL chatbot</h1>
+          </div>
+          <a class="nav-link" id="memoryLink" href="/login">Login for memory</a>
+        </div>
+
+        <div class="messages" id="messages">
+          <article class="message assistant">
+            <p>Tell me the role, seniority, must-have skills, and any constraints like language, timing, or assessment type.</p>
+          </article>
+        </div>
+
+        <section class="recommendations" id="recommendations" hidden>
+          <h2>Current shortlist</h2>
+          <div id="recommendationList"></div>
+        </section>
+
+        <section class="quick-replies" id="quickReplies" hidden></section>
+
+        <form id="chatForm" class="composer">
+          <textarea id="chatInput" rows="3" placeholder="Describe the role or paste a job description..." required></textarea>
+          <button type="submit">Send</button>
+        </form>
+      </section>
+    </main>
+
+    <script src="/static/chat.js?v=24"></script>
+  </body>
+</html>

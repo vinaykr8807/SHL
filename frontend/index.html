@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>SHL Assessment Recommender</title>
+    <link rel="stylesheet" href="/static/styles.css?v=8" />
+  </head>
+  <body>
+    <header class="topbar">
+      <a class="brand" href="/">
+        <span class="brand-mark">S</span>
+        <span>SHL Recommender</span>
+      </a>
+      <nav class="nav-actions">
+        <a class="nav-link" href="/login">Sign in</a>
+        <a class="button-link" href="/chatbot">Open chatbot</a>
+      </nav>
+    </header>
+
+    <main class="home-shell">
+      <section class="home-copy">
+        <p class="eyebrow">Individual Test Solutions only</p>
+        <h1>Find the right SHL assessments through conversation.</h1>
+        <p class="lead">
+          Describe the role in plain language. The assistant clarifies missing context,
+          compares catalog products, refines shortlists, and keeps every recommendation
+          grounded in your scraped SHL catalog.
+        </p>
+        <div class="hero-actions">
+          <a class="button-link large" href="/login">Start with login</a>
+          <a class="button-link ghost large" href="/chatbot">Try as guest</a>
+        </div>
+      </section>
+
+      <section class="glass-showcase" aria-label="Preview">
+        <div class="preview-card">
+          <div class="preview-header">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+          <div class="preview-message user">Hiring graduate financial analysts with no work experience.</div>
+          <div class="preview-message assistant">
+            Clarify: graduate level, numerical reasoning, finance knowledge. Recommend catalog-backed tests only.
+          </div>
+          <div class="metric-grid">
+            <div>
+              <strong>377</strong>
+              <span>catalog items</span>
+            </div>
+            <div>
+              <strong>JSON</strong>
+              <span>evidence memory</span>
+            </div>
+            <div>
+              <strong>RAG</strong>
+              <span>FAISS retrieval</span>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <script src="/static/main.js?v=8"></script>
+  </body>
+</html>

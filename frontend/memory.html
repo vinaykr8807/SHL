@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Memory Analytics | SHL Recommender</title>
+    <link rel="stylesheet" href="/static/styles.css?v=8" />
+  </head>
+  <body>
+    <header class="topbar">
+      <a class="brand" href="/">
+        <span class="brand-mark">S</span>
+        <span>SHL Recommender</span>
+      </a>
+      <nav class="nav-actions">
+        <a class="nav-link" href="/chatbot">Chatbot</a>
+        <a class="button-link" id="rawJsonLink" href="#">Raw JSON</a>
+      </nav>
+    </header>
+
+    <main class="memory-shell">
+      <section class="memory-hero">
+        <div>
+          <p class="eyebrow">User memory</p>
+          <h1>Conversation analytics</h1>
+          <p class="subtle" id="memoryMeta">Loading saved SHL assessment memory...</p>
+        </div>
+      </section>
+
+      <section class="memory-grid">
+        <article class="memory-card stat-card">
+          <span>Total conversations</span>
+          <strong id="conversationCount">0</strong>
+        </article>
+        <article class="memory-card stat-card">
+          <span>Recommended assessments</span>
+          <strong id="assessmentCount">0</strong>
+        </article>
+        <article class="memory-card stat-card">
+          <span>Last updated</span>
+          <strong id="lastUpdated">-</strong>
+        </article>
+      </section>
+
+      <section class="memory-card">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">Groq summary</p>
+            <h2>What this user tends to need</h2>
+          </div>
+        </div>
+        <p class="memory-summary" id="memorySummary">No summary yet.</p>
+      </section>
+
+      <section class="memory-columns">
+        <article class="memory-card">
+          <p class="eyebrow">Assessment frequency</p>
+          <div id="assessmentFrequency" class="frequency-list"></div>
+        </article>
+        <article class="memory-card">
+          <p class="eyebrow">Recent role contexts</p>
+          <div id="roleContexts" class="context-list"></div>
+        </article>
+      </section>
+
+      <section class="memory-card">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">Timeline</p>
+            <h2>Conversation evidence</h2>
+          </div>
+        </div>
+        <div id="timeline" class="timeline"></div>
+      </section>
+    </main>
+
+    <script src="/static/memory.js?v=9"></script>
+  </body>
+</html>

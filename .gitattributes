@@ -1,0 +1,2 @@
+*.json filter=lfs diff=lfs merge=lfs -text
+GenAI_SampleConversations/*.md filter=lfs diff=lfs merge=lfs -text
