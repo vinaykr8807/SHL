@@ -1,3 +1,12 @@
+---
+title: SHL Recommender
+emoji: 🧭
+colorFrom: green
+colorTo: white
+sdk: docker
+pinned: false
+---
+
 # Conversational SHL Assessment Recommender
 
 A catalog-grounded conversational agent for selecting SHL Individual Test Solutions. The assistant helps recruiters and hiring managers move from vague hiring intent to a concise, defensible shortlist of SHL assessments through clarification, recommendation, refinement, and comparison.
