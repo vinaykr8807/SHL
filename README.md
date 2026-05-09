@@ -2,7 +2,7 @@
 title: SHL Recommender
 emoji: 🧭
 colorFrom: green
-colorTo: white
+colorTo: gray
 sdk: docker
 pinned: false
 ---
